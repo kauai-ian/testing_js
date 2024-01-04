@@ -34,7 +34,7 @@ test("divide", () => {
 });
 
 test("divide", () => {
-  expect(calculator.divide(10, 0)).toThrow("not allowed");
+  expect(() => {calculator.divide(10, 0)}).toThrowError("not allowed");
 });
 
 describe("cyphers a string", () => {
